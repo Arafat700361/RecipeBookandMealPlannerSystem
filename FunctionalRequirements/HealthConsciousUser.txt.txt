@@ -1,0 +1,166 @@
+================================================================================
+                   RECIPE BOOK AND MEAL PLANNER SYSTEM
+                   
+                       User: Health-Conscious User
+
+
+                        Functional Requirements
+
++----------+------------------------------+---------------------------------------+
+|  No.     |  Feature / Requirement       |  Description                          |
++----------+------------------------------+---------------------------------------+
+|  4.0     |  User Home Page              |  All features are accessible from the |
+|          |                              |  home page upon login.                |
++----------+------------------------------+---------------------------------------+
+|  4.1     |  Registration                |  New users register by providing full |
+|          |  [ref All User 1.1]          |  name, email, username, password,     |
+|          |                              |  confirm password, gender, phone      |
+|          |                              |  number, and date of birth. The form  |
+|          |                              |  can be submitted or reset.           |
++----------+------------------------------+---------------------------------------+
+|  4.2     |  Login                       |  Registered users log in using        |
+|          |  [ref All User 1.2]          |  username and password. A forgot      |
+|          |                              |  password option is provided.         |
++----------+------------------------------+---------------------------------------+
+|  4.3     |  Dashboard                   |  The main dashboard provides access   |
+|          |                              |  to all features through a side menu, |
+|          |                              |  header, and footer.                  |
++----------+------------------------------+---------------------------------------+
+|  4.3.1   |  Side Menu                   |  Contains all navigation buttons for  |
+|          |                              |  Health-Conscious User features.      |
++----------+------------------------------+---------------------------------------+
+|  4.3.1.1 |  Dashboard Button            |  Navigates the user back to the main  |
+|          |  [ref 4.3]                   |  dashboard view.                      |
++----------+------------------------------+---------------------------------------+
+|  4.3.1.2 |  View Profile Button         |  [ref All User 1.3.1.2]               |
+|          |                              |  Opens the profile page showing name, |
+|          |                              |  email, gender, phone number, date of |
+|          |                              |  birth, and profile picture.          |
++----------+------------------------------+---------------------------------------+
+|  4.3.1.3 |  Edit Profile Button         |  [ref All User 1.3.1.2.7]             |
+|          |                              |  Opens the edit form pre-filled with  |
+|          |                              |  existing values. On submission,      |
+|          |                              |  updated info is saved and the user   |
+|          |                              |  returns to the view profile page.    |
++----------+------------------------------+---------------------------------------+
+|  4.3.1.4 |  Change Profile Picture      |  [ref All User 1.3.1.2.8]             |
+|          |  Button                      |  Opens an upload control. On          |
+|          |                              |  submission, the new picture is saved |
+|          |                              |  and the user returns to view profile.|
++----------+------------------------------+---------------------------------------+
+|  4.3.1.5 |  Change Password Button      |  [ref All User 1.3.1.5]               |
+|          |                              |  Opens a form to enter current        |
+|          |                              |  password, new password, and confirm  |
+|          |                              |  new password. On submission, the     |
+|          |                              |  password is updated.                 |
++----------+------------------------------+---------------------------------------+
+|  4.3.1.6 |  Set Health Goals Button     |  Opens a form to set daily calorie,   |
+|          |                              |  protein, carbohydrate, and fat       |
+|          |                              |  targets. On submission, all targets  |
+|          |                              |  are saved to the user profile.       |
++----------+------------------------------+---------------------------------------+
+| 4.3.1.6.1|  Taking Daily Calorie Target |  Accepts a numeric daily calorie      |
+|          |                              |  goal in kilocalories (kcal).         |
++----------+------------------------------+---------------------------------------+
+| 4.3.1.6.2|  Taking Protein Target       |  Accepts a numeric daily protein      |
+|          |                              |  goal in grams.                       |
++----------+------------------------------+---------------------------------------+
+| 4.3.1.6.3|  Taking Carbohydrate Target  |  Accepts a numeric daily              |
+|          |                              |  carbohydrate goal in grams.          |
++----------+------------------------------+---------------------------------------+
+| 4.3.1.6.4|  Taking Fat Target           |  Accepts a numeric daily fat goal     |
+|          |                              |  in grams.                            |
++----------+------------------------------+---------------------------------------+
+| 4.3.1.6.5|  Submitting Health Goals     |  Saves all four targets (calorie,     |
+|          |                              |  protein, carbohydrate, fat) to the   |
+|          |                              |  user profile.                        |
++----------+------------------------------+---------------------------------------+
+|  4.3.1.7 |  My Recipe Box Button        |  Displays all saved recipes with      |
+|          |                              |  dietary tags and a per-card          |
+|          |                              |  nutritional summary. Recipes can be  |
+|          |                              |  filtered by dietary restriction tag. |
+|          |                              |  Serving size adjustment recalculates |
+|          |                              |  nutrition values proportionally.     |
++----------+------------------------------+---------------------------------------+
+| 4.3.1.7.1|  Show Recipes with           |  Each recipe card shows dietary tags  |
+|          |  Nutrition Summary           |  and a summary of calories, protein,  |
+|          |                              |  carbohydrates, and fat per serving.  |
++----------+------------------------------+---------------------------------------+
+| 4.3.1.7.2|  Filter by Dietary Tag       |  Filters the recipe grid to show only |
+|          |                              |  recipes matching the selected        |
+|          |                              |  restriction tags: vegetarian, vegan, |
+|          |                              |  low-carb, gluten-free, dairy-free.   |
++----------+------------------------------+---------------------------------------+
+| 4.3.1.7.3|  View Nutritional Detail     |  The recipe detail page shows full    |
+|          |                              |  nutritional breakdown per serving:   |
+|          |                              |  calories, protein, carbohydrates,    |
+|          |                              |  and fat.                             |
++----------+------------------------------+---------------------------------------+
+| 4.3.1.7.4|  Add / Edit Recipe with      |  [ref Family User 2.3.1.7]            |
+|          |  Nutrition Fields            |  The Add / Edit Recipe form includes  |
+|          |                              |  additional fields for entering       |
+|          |                              |  calorie, protein, carbohydrate, and  |
+|          |                              |  fat values per serving.              |
++----------+------------------------------+---------------------------------------+
+| 4.3.1.7.5|  Serving Size Recalculates   |  Changing the serving size            |
+|          |  Nutrition                   |  recalculates all ingredient          |
+|          |                              |  quantities and all nutritional       |
+|          |                              |  values proportionally and updates    |
+|          |                              |  them immediately in the view.        |
++----------+------------------------------+---------------------------------------+
+|  4.3.1.8 |  Weekly Meal Planner Button  |  [ref Family User 2.3.1.8]            |
+|          |                              |  Opens the 7-day planner grid with    |
+|          |                              |  an additional daily nutritional      |
+|          |                              |  summary overlay and health goal      |
+|          |                              |  comparison per day.                  |
++----------+------------------------------+---------------------------------------+
+| 4.3.1.8.1|  Daily Nutritional Summary   |  Displays the aggregated daily totals |
+|          |                              |  (calories, protein, carbohydrates,   |
+|          |                              |  fat) for all meals planned on each   |
+|          |                              |  day, shown below the day's meal      |
+|          |                              |  slots.                               |
++----------+------------------------------+---------------------------------------+
+| 4.3.1.8.2|  Goal Comparison             |  Compares each day's aggregated       |
+|          |                              |  nutritional totals against the       |
+|          |                              |  user's saved health goal targets for |
+|          |                              |  calories, protein, carbs, and fat.   |
++----------+------------------------------+---------------------------------------+
+| 4.3.1.8.3|  Visual Goal Indicator       |  Displays a colour-coded indicator    |
+|          |                              |  per day:                             |
+|          |                              |  - Green  : goal is met               |
+|          |                              |  - Amber  : under target              |
+|          |                              |  - Red    : goal is exceeded          |
++----------+------------------------------+---------------------------------------+
+|  4.3.1.9 |  Shopping List Button        |  [ref Family User 2.3.1.9]            |
+|          |                              |  Opens the auto-generated shopping    |
+|          |                              |  list from the active meal plan with  |
+|          |                              |  ingredient merging, category         |
+|          |                              |  grouping, and checkbox check-off.    |
++----------+------------------------------+---------------------------------------+
+| 4.3.1.10 |  Recommendations Button      |  Displays recipe recommendations      |
+|          |                              |  filtered to match the user's saved   |
+|          |                              |  dietary preference tags. Each        |
+|          |                              |  recommendation links to a full       |
+|          |                              |  recipe detail view.                  |
++----------+------------------------------+---------------------------------------+
+|4.3.1.10.1|  Dietary-Filtered            |  Shows only recipes matching the      |
+|          |  Recommendations             |  user's saved dietary restriction     |
+|          |                              |  tags (e.g., vegetarian, low-carb,    |
+|          |                              |  gluten-free).                        |
++----------+------------------------------+---------------------------------------+
+|4.3.1.10.2|  View Recipe Detail          |  Opens the full recipe detail page    |
+|          |  [ref Family User 2.3.1.6.3] |  for the selected recommended recipe. |
++----------+------------------------------+---------------------------------------+
+| 4.3.1.11 |  Logout Button               |  [ref All User 1.3.1.6]               |
+|          |                              |  Ends the user session and redirects  |
+|          |                              |  to the login page.                   |
++----------+------------------------------+---------------------------------------+
+|  4.3.2   |  Header                      |  [ref All User 1.3.2]                 |
+|          |                              |  Displays platform logo on top left,  |
+|          |                              |  logged-in username on top right,     |
+|          |                              |  and logout button on top right.      |
++----------+------------------------------+---------------------------------------+
+|  4.3.3   |  Footer                      |  [ref All User 1.3.3]                 |
+|          |                              |  Displays links to Privacy Policy,    |
+|          |                              |  Disclaimer, and About Us pages.      |
++----------+------------------------------+---------------------------------------+
